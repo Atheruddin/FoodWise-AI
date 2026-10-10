@@ -1,0 +1,31 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.cache/
+.pytest_cache/
+
+# Data files (Exclude large raw files, keep compact processed files for deployment)
+data/raw/
+*.zip
+*.tar.gz
+
+# Logs & temp files
+*.log
+scratch/
+.env
+.vscode/
+.idea/
+.DS_Store
+
+# Include deployment artifacts specifically
+!data/processed/*.parquet
+!data/processed/*.json
+!models/*.joblib
+!models/*.json
+.streamlit/secrets.toml

@@ -1,0 +1,73 @@
+{
+  "best_model_name": "XGBoost Regressor",
+  "results": {
+    "Naive Lag-1 Baseline": {
+      "MAE": 79.12,
+      "RMSE": 136.08,
+      "RMSLE": 0.6708,
+      "WAPE (%)": 34.81,
+      "R2": 0.7579
+    },
+    "Ridge Regression": {
+      "MAE": 103.13,
+      "RMSE": 499.83,
+      "RMSLE": 0.5938,
+      "WAPE (%)": 45.37,
+      "R2": -2.2656
+    },
+    "Random Forest Regressor": {
+      "MAE": 63.54,
+      "RMSE": 110.08,
+      "RMSLE": 0.4881,
+      "WAPE (%)": 27.96,
+      "R2": 0.8416
+    },
+    "HistGradientBoosting Regressor": {
+      "MAE": 63.12,
+      "RMSE": 109.93,
+      "RMSLE": 0.4798,
+      "WAPE (%)": 27.77,
+      "R2": 0.842
+    },
+    "XGBoost Regressor": {
+      "MAE": 64.64,
+      "RMSE": 114.7,
+      "RMSLE": 0.4795,
+      "WAPE (%)": 28.44,
+      "R2": 0.828
+    }
+  },
+  "val_weeks_range": "Weeks 136 to 145",
+  "train_weeks_range": "Weeks 1 to 135",
+  "feature_importance": {
+    "center_meal_mean_orders": 0.49245840311050415,
+    "lag_1": 0.12920580804347992,
+    "promo_combo": 0.05382849648594856,
+    "rolling_min_4": 0.044665247201919556,
+    "price_ratio": 0.044275861233472824,
+    "rolling_mean_4": 0.041974883526563644,
+    "rolling_mean_8": 0.0362861342728138,
+    "emailer_for_promotion": 0.03455311805009842,
+    "price_diff_lag_1": 0.011715869419276714,
+    "discount_amount": 0.009204565547406673,
+    "price_pct_change": 0.006549888290464878,
+    "center_meal_std_orders": 0.006493858527392149,
+    "checkout_price": 0.005896817427128553,
+    "homepage_featured": 0.005849555134773254,
+    "category_Seafood": 0.005827708635479212,
+    "discount_percent": 0.005537699442356825,
+    "rolling_max_4": 0.005533210933208466,
+    "cuisine_std_orders": 0.0037384808529168367,
+    "category_Beverages": 0.0036141283344477415,
+    "base_price": 0.0031957507599145174,
+    "cuisine_mean_orders": 0.00309549062512815,
+    "meal_std_orders": 0.0030694198794662952,
+    "category_Fish": 0.00306308944709599,
+    "meal_mean_orders": 0.0027754551265388727,
+    "category_mean_orders": 0.00271515897475183
+  },
+  "feature_count": 56,
+  "total_train_records": 456548,
+  "unique_centers": 77,
+  "unique_meals": 51
+}
