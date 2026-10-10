@@ -528,7 +528,7 @@ elif nav_choice == "🍳 D. Kitchen Planning Simulator":
 # -------------------------------------------------------------------
 # E. AI OPERATIONS COPILOT
 # -------------------------------------------------------------------
-elif nav_choice == "🤖 E. AI Operations Copilot":
+elif nav_choice == "🧠 E. AI Operations Copilot":
     st.title(" AI Operations Copilot")
     st.markdown("Multi-agent operational decision support powered by ML forecasts, risk simulation, and optional Gemini LLM synthesis.")
 
